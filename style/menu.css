@@ -130,6 +130,17 @@
     border-bottom: 1px solid #eee;
 }
 
+.mobile-logo a>img {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+}
+
 .mobile-nav-links {
     display: flex;
     flex-direction: column;

@@ -1,11 +1,10 @@
+let index = 0;
+const slides = document.querySelector('.carousel-slides');
+const totalSlides = document.querySelectorAll('.carousel-slides .slide').length;
 
-    let currentIndex = 0; // Índice do slide atual
-    const slides = document.querySelectorAll(".slide");
-    const totalSlides = slides.length;
+function moveToNextSlide() {
+    index = (index + 1) % totalSlides; // Ciclo entre as imagens
+    slides.style.transform = `translateX(-${index * 36}%)`; // Move as imagens para a esquerda
+}
 
-    function changeSlide() {
-        currentIndex = (currentIndex + 1) % totalSlides; // Muda para o próximo slide
-        document.querySelector(".carousel-slides").style.transform = `translateX(-${currentIndex * 100}%)`;
-    }
-
-    setInterval(changeSlide, 3000); // Troca de slide a cada 3 segundos
+setInterval(moveToNextSlide, 3000); // Muda a imagem a cada 3 segundos

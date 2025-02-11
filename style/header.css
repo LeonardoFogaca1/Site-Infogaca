@@ -142,10 +142,10 @@ body {
     }
     .header-carousel{
         width: 100%;
-        height: auto;
+        height: 50%;
     }
     .carousel-slides {
-        height: auto;
+        height: 50vh;
         margin-top: 0;
     }
     .carousel-slides img {

@@ -1,0 +1,40 @@
+.header-main {
+    padding: 20px;
+    color: black;
+    text-align: center;
+}
+.header-main h1 {
+    font-size: 38px;
+}
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.feature {
+    margin: 20px;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+}
+.feature h2, p{
+    padding: 5px;
+    margin: 5px;
+}
+.feature img {
+    margin-top: 25px;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: flex;
+}
+
+
+@media (min-width: 768px) {
+    .features {
+        flex-wrap: nowrap;
+    }
+}

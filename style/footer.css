@@ -36,7 +36,7 @@
 .div-footer-links {
     display: block;
     position: relative;
-    top: 50px;
+    top: 205px;
 }
 
 .footer-links {
@@ -96,6 +96,10 @@
 @media (max-width: 968px) {
     .footer-links {
         grid-template-columns: repeat(3, 1fr);
+        
+    }
+    .div-footer-links {
+        top: 0;
     }
 }
 
@@ -107,6 +111,10 @@
 
     .footer-links {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .div-footer-links {
+        top: 0;
     }
 }
 
@@ -128,5 +136,9 @@
     .footer-bottom-links {
         flex-direction: column;
         gap: 0.5rem;
+    }
+
+    .div-footer-links {
+        top: 0;
     }
 }

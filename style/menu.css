@@ -10,6 +10,8 @@
     padding: 15px;
     background-color: white;
     border-bottom: 1px solid #eee;
+    position: relative;
+    z-index: 1000;
 }
 
 .nav-container {
@@ -186,6 +188,12 @@
     z-index: 1000;
     cursor: pointer;
     padding: 0.5rem;
+    background-color: rgba(59, 55, 55, 0.212);
+    border: 1px solid rgba(0, 0, 0, 0.336);
+}
+
+.menu-toggle:hover {
+    background-color: rgba(0, 0, 0, 0.247);
 }
 
 /* Media Query para Mobile */

@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="style/menu.css">
     <link rel="stylesheet" href="style/faqs.css">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/section.css">
+    <link rel="stylesheet" href="style/parceiros.css">
     <link rel="shortcut icon" href="content/infogaca-favicon-1.png" type="image/x-icon">
     
 </head>
@@ -25,17 +27,9 @@
             
             <div class="right-side-nav">
                 <div class="nav-links">
-                    <div class="dropdown">
-                        <a href="#">Link One</a>
-                        <div class="dropdown-content">
-                            <a href="#" class="dropdown-item">Page one</a>
-                            <a href="#" class="dropdown-item">Page two</a>
-                            <a href="#" class="dropdown-item">Page three</a>
-                            <a href="#" class="dropdown-item">Page four</a>
-                        </div>
-                    </div>
+                    <a href="#Serviços ">Nossos Serviços</a>
                     <a href="other-pages/nosContate.html">Nos contate</a>
-                    <a href="#">Link Three</a>
+                    <a href="#faq-container">Dúvidas frequentes</a>
                     <div class="dropdown">
                         <a href="#">Link Four</a>
                         <div class="dropdown-content">
@@ -60,15 +54,7 @@
         </div>
         
         <div class="mobile-nav-links">
-            <div class="mobile-dropdown">
-                <a href="#">Link One</a>
-                <div class="mobile-dropdown-content">
-                    <a href="#" class="dropdown-item">Page one</a>
-                    <a href="#" class="dropdown-item">Page two</a>
-                    <a href="#" class="dropdown-item">Page three</a>
-                    <a href="#" class="dropdown-item">Page four</a>
-                </div>
-            </div>
+            <a href="#">Serviços</a>
             <a href="other-pages/nosContate.html">Nos contate</a>
             <a href="#">Link Three</a>
             <div class="mobile-dropdown">
@@ -150,8 +136,62 @@
         </section>
     </main>
 
+    <!-- NOSSOS PARCEIROS -->
+    <section class="parceiros">
+        <h2>NOSSOS PARCEIROS</h2>
+        <p>Alguns de nossos parceiros</p>
+        <div class="logos">
+            <button><a target="_blank" href="https://www.intelbras.com/pt-br/"><img src="content/intelbras.png" alt="Intelbras"></a></button>
+            <button><a target="_blank" href="https://www.hikvision.com/pt-br/"><img src="content/hikvision.png" alt="hikvision"></a></button>
+            <button><a target="_blank" href="https://www.controlid.com.br/"><img src="content/controlid.png" alt="control id"></a></button>
+            <button><a target="_blank" href="https://www.vigiaseg.com.br/"><img src="content/vigiaseg.png" alt="vigiaseg"></a></button>
+        </div>
+    </section>
+
+    <!-- SEÇAO NOSSOS SERVIÇOS -->
+    <div id="Serviços" class="container">
+        <h2 class="title">Nossos Serviços</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="content/camera-de-seguranca.png" alt="Câmeras de Segurança" class="icon">
+                <h3>Câmeras de Segurança (CFTV)</h3>
+                <p>Gravação de imagens para segurança de moradores e visitantes.</p>
+                <a href="#" class="btn">Saiba mais</a>
+            </div>
+            <div class="card">
+                <img src="content/sereia.png" alt="Alarmes" class="icon">
+                <h3>Alarmes</h3>
+                <p>Soluções eficazes para monitoramento e segurança.</p>
+                <a href="#" class="btn">Saiba mais</a>
+            </div>
+            <div class="card">
+                <img src="content/interfone.png" alt="Interfones" class="icon">
+                <h3>Interfones</h3>
+                <p>Facilidade na comunicação entre moradores e visitantes.</p>
+                <a href="#" class="btn">Saiba mais</a>
+            </div>
+            <div class="card">
+                <img src="content/controle-de-acesso.png" alt="Controle de Acesso" class="icon">
+                <h3>Controle de Acesso</h3>
+                <p>Sistemas para garantir segurança e gestão de entrada.</p>
+                <a href="#" class="btn">Saiba mais</a>
+            </div>
+            <div class="card">
+                <img src="content/cerca.png" alt="Cerca Elétrica" class="icon">
+                <h3>Cerca Elétrica</h3>
+                <p>Proteção reforçada contra invasões.</p>
+                <a href="#" class="btn">Saiba mais</a>
+            </div>
+            <div class="card">
+                <img src="content/alarme-de-incendio.png" alt="Sistema de Incêndio" class="icon">
+                <h3>Sistema de Incêndio</h3>
+                <p>Equipamentos modernos para prevenção e segurança.</p>
+                <a href="#" class="btn">Saiba mais</a>
+            </div>
+        </div>
+    </div>
     <!-- FAQS -->
-    <div class="faq-container">
+    <div id="faq-container" class="faq-container">
         <h2>FAQs</h2>
         <div class="faq-item">
             <h3>Quais serviços vocês oferecem? <button class="toggle-btn">▼</button></h3>

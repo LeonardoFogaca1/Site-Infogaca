@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nos contate</title>
-    <link rel="shortcut icon" href="content/infogaca-favicon-1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../content/Logos/infogaca-favicon-1.png" type="image/x-icon">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,14 +12,25 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f4f4f4;
+            background-color: #004aad;
             overflow-y: hidden;
             
         }
 
+        .logo{
+            display: flex;
+            position: absolute;
+            top: 100px;
+        }
+
+        .logo img {
+            width: 350px;
+            height: auto;
+        }
+
 
         .container {
-            background: white;
+            background: #3658e2;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -27,9 +38,11 @@
         }
         h2 {
             text-align: center;
+            color: white;
         }
         p {
             text-align: center;
+            color: white;
         }
         input, textarea {
             width: 95%;
@@ -44,14 +57,16 @@
         button {
             width: 100%;
             padding: 10px;
-            background: black;
-            color: white;
+            background: #eee;
+            color: black;
+            font-weight: 700;
             border: none;
             cursor: pointer;
             border-radius: 4px;
         }
         button:hover {
-            background: #333;
+            background: rgb(100, 100, 100);
+            color: white;
         }
         .success {
             color: green;
@@ -67,11 +82,17 @@
         }
         .label-check {
             width: 100%;
+            color: rgb(252, 235, 235);
         }
 
     </style>
 </head>
 <body>
+    <div class="logo">
+        <a href="#">
+            <img src="../content/Logos/INFOGACA-whiteBlack1.png" alt="">
+        </a>
+    </div>
     <div class="container">
         <h2>Nos contate</h2>
         <p>Nos envie um e-mail para o esclarecimento de quaisquer dúvidas</p>

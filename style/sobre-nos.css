@@ -1,0 +1,53 @@
+.sobre-nos {
+    background-color: #2e75df;
+    padding: 40px 0;
+}
+
+.sobre-nos h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.sobre-nos p {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.sobre-nos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    justify-items: center;
+}
+
+.sobre-nos-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sobre-nos-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #5271ff;
+}
+
+.sobre-nos-item p {
+    font-size: 1rem;
+    color: #2c2c2c;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sobre-nos-grid {
+        grid-template-columns: 1fr;
+    }
+}

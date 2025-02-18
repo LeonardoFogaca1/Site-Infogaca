@@ -5,6 +5,7 @@
 }
 .header-main h1 {
     font-size: 38px;
+    color: #004aad;
 }
 .features {
     display: flex;
@@ -21,8 +22,13 @@
     text-align: center;
 }
 .feature h2, p{
+    color: #004aad;
     padding: 5px;
     margin: 5px;
+}
+
+.feature p {
+    color: #000;
 }
 .feature img {
     margin-top: 25px;

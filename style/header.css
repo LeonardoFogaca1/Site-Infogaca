@@ -16,13 +16,18 @@ body {
     align-items: center;
     justify-content: flex-start;
     max-width: 100vw;
-    height: auto;
+    height:650px;
     margin-left: 0;
     margin-bottom: 4rem;
-    background: white;
+    background: #004aad;
+    color: white;
     padding: 40px;
     border-radius: 8px;
     gap: 0;
+}
+
+.logo-mob {
+    display: none;
 }
 
 .header-container {
@@ -46,27 +51,10 @@ body {
 }
 .header p {
     font-size: 14px;
-    color: #666;
+    color: #7b93ff;
     margin-bottom: 20px;
 }
-.buttons {
-    display: flex;
-    gap: 10px;
-}
-.buttons button {
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-}
-.btn-primary {
-    background: black;
-    color: white;
-}
-.btn-secondary {
-    background: white;
-    border: 1px solid black;
-}
+
 /*
 .header-image {
     width: 45%;
@@ -122,12 +110,22 @@ body {
         flex-direction: column;
         text-align: center;
         padding: 20px;
+        height: auto;
+    }
+    .logo-mob {
+        display: block;
+        position: absolute;
+        top: 30px;
+    }
+    .logo-mob img {
+        width: 220px;
+        height: auto;
     }
     .header-text{
         justify-content: center;
         max-width: 100%;
         padding: 5px 0;
-        margin: 0;
+        margin: 70px 0 0 0;
         font-size: 14px;
     }
     .header-text h1{

@@ -1,29 +1,33 @@
 .cmodal {
     display: none;
     position: fixed;
-    z-index: 1000;
+    z-index: 9999;
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh; /* Usar vh ao invés de % */
     background-color: rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
 }
 
 .modal-ccontent {
     background: white;
-    margin: 5% auto;
+    position: fixed; /* Mudar para fixed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centralizar na tela */
     padding: 20px;
     width: 80%;
-    height: 80%;
+    height: 80vh; /* Usar vh ao invés de % */
     max-width: 800px;
     border-radius: 10px;
-    position: relative;
 }
 
 iframe {
     width: 100%;
-    height: 90%;
+    height: calc(100% - 30px); /* Ajustar altura considerando o botão de fechar */
     border-radius: 10px;
+    border: none;
 }
 
 .cclose {
@@ -32,4 +36,5 @@ iframe {
     right: 15px;
     font-size: 25px;
     cursor: pointer;
+    z-index: 10000; /* Garantir que fique acima do iframe */
 }

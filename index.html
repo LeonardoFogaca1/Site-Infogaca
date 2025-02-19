@@ -32,7 +32,7 @@
             <div class="right-side-nav">
                 <div class="nav-links">
                     <a href="#Serviços ">Nossos Serviços</a>
-                    <a href="#" target="_blank" onclick="openModal('contact-cmodal', event)">Nos contate</a>
+                    <a class="contact-link" onclick="openModal('contact-cmodal', event)">Nos contate</a>
                     <a href="#faq-container">Dúvidas frequentes</a>
                     <div class="dropdown">
                         <a href="#">Mais</a>
@@ -60,7 +60,7 @@
         
         <div class="mobile-nav-links">
             <a href="#Serviços">Nossos Serviços</a>
-            <a href="#" onclick="openModal('contact-cmodal', event)" target="_blank">Nos contate</a>
+            <a class="contact-link" onclick="openModal('contact-cmodal', event)">Nos contate</a>
             <a href="#faq-container">Dúvidas frequentes</a>
             <div class="mobile-dropdown">
                 <a href="#">Mais</a>
@@ -102,13 +102,6 @@
 
     <!-- HEADER -->
     <div class="header">
-        <!-- Modal de Contato -->
-    <div id="contact-cmodal" class="cmodal">
-        <div class="modal-ccontent">
-            <span class="cclose">&times;</span>
-            <iframe id="contact-frame" src="other-pages/nosContate.html" frameborder="0"></iframe>
-        </div>
-    </div>
         <div class="header-container">
             <div class="logo-mob">
                 <a href="#">
@@ -320,7 +313,13 @@
         </div>
     </footer>
 
-    
+    <!-- Modal de Contato -->
+    <div id="contact-cmodal" class="cmodal">
+        <div class="modal-ccontent">
+            <span class="cclose">&times;</span>
+            <iframe id="contact-frame" src="other-pages/nosContate.html" frameborder="0"></iframe>
+        </div>
+    </div>
 
     <script src="menu-mobile.js"></script>
     <script src="slides.js"></script>

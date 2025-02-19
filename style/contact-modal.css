@@ -1,6 +1,6 @@
 .cmodal {
     display: none;
-    position: fixed;
+    position: absolute;
     z-index: 1000;
     left: 0;
     top: 0;

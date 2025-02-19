@@ -1,5 +1,5 @@
 .sobre-nos {
-    background-color: #2e75df;
+    background-color: #eee;
     padding: 40px 0;
 }
 
@@ -8,13 +8,13 @@
     font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 20px;
-    color: #ffffff;
+    color: #3A3A3A;
 }
 
 .sobre-nos p {
     text-align: center;
     font-size: 1.3rem;
-    color: #ffffff;
+    color: #222222;
     margin-bottom: 40px;
 }
 
@@ -37,12 +37,12 @@
 .sobre-nos-item h3 {
     font-size: 1.5rem;
     margin-bottom: 15px;
-    color: #5271ff;
+    color: #3A3A3A;
 }
 
 .sobre-nos-item p {
     font-size: 1rem;
-    color: #2c2c2c;
+    color: #222222;
 }
 
 /* Responsividade */

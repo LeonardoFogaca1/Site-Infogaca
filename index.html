@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/section.css">
     <link rel="stylesheet" href="style/parceiros.css">
+    <link rel="stylesheet" href="/style/contact-modal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <link rel="shortcut icon" href="content/Logos/infogaca-favicon-1.png" type="image/x-icon">
@@ -25,13 +26,13 @@
     <nav class="navbar-desktop">
         <div class="nav-container">
             <a href="#" class="logo">
-                <img src="content/Logos/INFOGACA-whiteBlack1.png" alt="">
+                <img src="content/Logos/infogaca-deitado-1.png" alt="">
             </a>
             
             <div class="right-side-nav">
                 <div class="nav-links">
                     <a href="#Serviços ">Nossos Serviços</a>
-                    <a href="other-pages/nosContate.html">Nos contate</a>
+                    <a target="_blank" onclick="openModal('contact-cmodal')">Nos contate</a>
                     <a href="#faq-container">Dúvidas frequentes</a>
                     <div class="dropdown">
                         <a href="#">Mais</a>
@@ -54,12 +55,12 @@
     <!-- Menu Mobile -->
     <nav class="navbar-mobile">
         <div class="mobile-logo">
-            <a href="#" class="logo"><img src="content/Logos/INFOGACA-whiteBlack1.png" alt="logo"></a>
+            <a href="#" class="logo"><img src="content/Logos/infogaca-deitado-1.png" alt="logo"></a>
         </div>
         
         <div class="mobile-nav-links">
             <a href="#Serviços">Nossos Serviços</a>
-            <a href="other-pages/nosContate.html">Nos contate</a>
+            <a onclick="openModal('contact-cmodal')" target="_blank">Nos contate</a>
             <a href="#faq-container">Dúvidas frequentes</a>
             <div class="mobile-dropdown">
                 <a href="#">Mais</a>
@@ -274,7 +275,7 @@
                     <h2><img src="content/Logos/infogaca-bgWhitep.png" alt=""></h2>
                     <div class="contact-info">
                         <p><strong>Nosso endereço:</strong></p>
-                        <p>R. Ezequiel Freire, 55 - Santana, São Paulo - SP, 02034-000</p>
+                        <p>R. Voluntários da Pátria, 654 - Santana, São Paulo - SP, 02010-000</p>
                         <p><strong>Contato:</strong></p>
                         <p>(11) 96458-9266</p>
                         <p>infogacatecnologia@gmail.com</p>
@@ -297,10 +298,10 @@
                     <nav class="footer-links">
                         <a href="https://www.linkedin.com/company/infogaca/">Trabalhe Conosco</a>
                         <a href="#sobre-nos">Sobre Nós</a>
-                        <a href="https://www.instagram.com/infogacatecnologia/">Parcerias</a>
-                        <a href="https://www.instagram.com/infogacatecnologia/">Publicidade</a>
+                        <a target="_blank" href="https://www.instagram.com/infogacatecnologia/">Parcerias</a>
+                        <a target="_blank" href="https://www.instagram.com/infogacatecnologia/">Publicidade</a>
                         <a href="#Serviços">Serviços</a>
-                        <a href="other-pages/nosContate.html">Suporte</a>
+                        <a target="_blank" href="other-pages/nosContate.html">Suporte</a>
                     
                     </nav>
                 </div>
@@ -312,9 +313,18 @@
         </div>
     </footer>
 
+    <!-- Modal de Contato -->
+<div id="contact-cmodal" class="cmodal">
+    <div class="modal-ccontent">
+        <span class="cclose">&times;</span>
+        <iframe src="other-pages/nosContate.html" frameborder="0"></iframe>
+    </div>
+</div>
+
     <script src="menu-mobile.js"></script>
     <script src="slides.js"></script>
     <script src="faqs.js"></script>
     <script src="modal.js"></script>
+    <script src="cmodal.js"></script>
     </body>
 </html>

@@ -11,7 +11,7 @@ body {
 }
 
 .faq-container h2 {
-    color: #004aad;
+    color: #3A3A3A;
 }
 .faq-item {
     background: white;
@@ -21,7 +21,7 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .faq-item h3 {
-    color: #111;
+    color: #222222;
     margin: 0;
     display: flex;
     justify-content: space-between;
@@ -31,6 +31,7 @@ body {
 .faq-item p {
     display: none;
     margin-top: 10px;
+    color: #222222;
 }
 .faq-item p.active{
     display: block;

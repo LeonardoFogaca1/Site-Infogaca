@@ -10,7 +10,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-function openModal(id) {
+function openModal(id, event) {
+    if (event) {
+        event.preventDefault(); // Previne o scroll da página
+    }
+    
     const modal = document.getElementById(id);
     const iframe = document.getElementById("contact-frame");
     

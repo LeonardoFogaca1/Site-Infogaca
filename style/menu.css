@@ -8,7 +8,7 @@
 .navbar-desktop {
     width: 100%;
     padding: 15px;
-    background-color: #004aad;
+    background-color: #2e75df;
     color: #ffffff;
     border-bottom: 1px solid #adaaaa;
     position: relative;
@@ -48,12 +48,14 @@
     margin-right: 20px;
 }
 
+
 .nav-links a {
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
     transition: color 0.3s ease;
 }
+
 
 .dropdown {
     position: relative;
@@ -64,13 +66,17 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #5271ff;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     min-width: 200px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.1);
     border-radius: 4px;
     padding: 0.5rem 0;
     z-index: 1;
+}
+
+.dropdown-content a {
+    color: #000;
 }
 
 .dropdown:hover .dropdown-content {
@@ -81,12 +87,12 @@
     display: flex;
     align-items: center;
     padding: 0.75rem 1rem;
-    color: #fff;
+    color: black;
     text-decoration: none;
 }
 
 .dropdown-item:hover {
-    color: #004aad;
+    color: #007bff;
 }
 
 .nav-buttons {
@@ -105,23 +111,23 @@
 }
 
 .btn-light {
-    background-color: #023b86;
+    background-color: #033475;
     border: 1px solid #135ab6;
     color: #333;
 }
 
 .btn-light:hover {
-    background-color: #3658e2;
+    background-color: #2e4dc7;
 }
 
 .btn-dark {
-    background-color: #3658e2;
+    background-color: #2840a0;
     border: 1px solid #004aad;
     color: white;
 }
 
 .btn-dark:hover {
-    background-color: #5070f1;
+    background-color: #243472;
 }
 
 .modal {
@@ -179,7 +185,7 @@
     top: 0;
     height: 100vh;
     width: 250px;
-    background-color: #004aad;
+    background-color: #2e75df;
     box-shadow: 2px 0 10px rgba(0,0,0,0.1);
     padding: 1rem;
     overflow-y: auto;
@@ -224,6 +230,16 @@
     margin-left: 1rem;
     margin-top: 0.5rem;
     display: none;
+}
+
+.mobile-dropdown-content a {
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.mobile-dropdown-content a:hover {
+    color: #66aefa;
+    font-weight: 600;
 }
 
 .mobile-dropdown.active .mobile-dropdown-content {

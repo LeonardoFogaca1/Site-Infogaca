@@ -9,6 +9,10 @@ body {
     margin: auto;
     padding: 20px;
 }
+
+.faq-container h2 {
+    color: #004aad;
+}
 .faq-item {
     background: white;
     margin: 10px 0;
@@ -17,7 +21,7 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .faq-item h3 {
-    color: #5271ff;
+    color: #111;
     margin: 0;
     display: flex;
     justify-content: space-between;

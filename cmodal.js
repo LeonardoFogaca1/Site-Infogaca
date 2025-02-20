@@ -40,7 +40,7 @@ function openModal(id, event) {
         // Resetar posição da janela
         window.scrollTo(0, 0);
         
-        modal.style.display = "block";
+        modal.style.display = "flex";
         
         if (iframe) {
             // Recarregar iframe

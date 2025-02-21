@@ -41,6 +41,12 @@ function openModal(id, event) {
         window.scrollTo(0, 0);
         
         modal.style.display = "flex";
+        modal.style.position = "fixed";
+        modal.style.top = "50%";
+        modal.style.zIndex = "9000";
+        modal.style.width = "100%";
+        modal.style.aligncontent = "center";
+        modal.style.justifycontent = "center";
         
         if (iframe) {
             // Recarregar iframe

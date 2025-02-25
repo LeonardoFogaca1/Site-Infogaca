@@ -1,106 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nos contate</title>
-    <link rel="shortcut icon" href="../content/Logos/infogaca-favicon-1.png" type="image/x-icon">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #eee;
-            overflow-y: hidden;
-            
-        }
+    <title>Contato - Infogaça Tecnologia</title>
+    <link rel="stylesheet" href="../style/contact-form.css">
 
-        .container {
-            background: #eee;
-            padding: 20px;
+    <style>
+        .contact-container {
+            display: block;
+            margin: 10px;
+            padding: 10px;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #eee;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-        }
-        h2 {
+            position: relative;
+            align-items: center;
             text-align: center;
-            color: #3A3A3A;
+            justify-content: center;
+            overflow: hidden;
+            max-width: 100%;
+            
+    
         }
-        p {
-            text-align: center;
+        .contact-container h2 {
+            font-size: 25px;
+            justify-content: center;
             color: #222222;
         }
-        input, textarea {
-            width: 95%;
-            margin: 10px 0px;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+
+        .contact-container p {
+            font-size: 16px;
+            margin-bottom: 30px;
+            color: #3A3A3A;
+            font-weight: 500;
+        }
+
+        form{
+            display: block;
+           
+        }
+
+        .form-group {
+            color: #222222;
+            display: flex; 
+            margin-bottom: 20px;
+            flex-direction: column;  
+        }
+        input{
+            display: block;
+            width: 100%;
+            height: 30px;
+            border: none;
+            box-shadow: 1px 1px 3.2px rgba(0, 0, 0, 0.363);
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
         }
         textarea {
             resize: none;
+            border: none;
+            box-shadow: 1px 1px 2.4px rgba(0, 0, 0, 0.37);
+            width: 50%;
+            height: 90px;
+
         }
         button {
-            width: 100%;
-            padding: 10px;
-            background: #b0b0b0;
-            color: black;
-            font-weight: 700;
+            display: block;
+            justify-content: flex-start;
+            width:100%;
+            height: 40px;
+            background-color: #b0b0b0;
             border: none;
-            cursor: pointer;
-            border-radius: 4px;
-        }
-        button:hover {
-            background: rgb(100, 100, 100);
+            box-shadow: 1px 1px 3px gray;
             color: white;
+            font-size: 15px;
+            font-weight: 600;
         }
-        .success {
-            color: rgb(3, 145, 3);
-            text-align: center;
-            display: none;
-        }
-        .checkbox-container {
-            display: flex;
-            align-items: center;    
-        }
-        .checkbox-container input {
-            margin-left: -280px;
-        }
-        .label-check {
-            width: 100%;
+
+        button:hover {
+            background-color: white;
             color: #222222;
+        }
+
+        .contact-info{
+            display: block;
+            text-align: start;
+        }
+
+        @media (max-width: 600px) {
+            .contact-container {
+                padding: 15px;
+            }
+
+            .contact-container h2 {
+                font-size: 20px;
+            }
+
+            .contact-container p {
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+
+            textarea {
+                width: 100%;
+                height: 120px;
+            }
         }
 
     </style>
 </head>
 <body>
-    <div class="container">
-        <h2>Nos contate</h2>
-        <p>Nos envie um e-mail para o esclarecimento de quaisquer dúvidas</p>
-        <form id="contactForm">
-            <input type="text" id="name" placeholder="Nome" required>
-            <input type="email" id="email" placeholder="E-mail" required>
-            <textarea id="message" placeholder="Digite sua mensagem..." required minlength="20"></textarea>
-
-            <div class="checkbox-container">
-                <label for="terms" class="label-check">Eu aceito os termos</label>
-                <input type="checkbox" class="check" id="terms" required>
+    <div class="contact-container">
+        <h2>Entre em contato conosco</h2>
+        <p>Preencha o formulário abaixo para solicitar um orçamento ou tirar suas dúvidas:</p>
+        
+        <form action="processar-contato.php" method="POST" id="contact-form">
+            <div class="form-group">
+                <input type="text" id="nome" name="nome" required placeholder=" Nome">
             </div>
-         <button type="submit">Enviar</button>
+            
+            <div class="form-group">
+                <input type="email" id="email" name="email" required placeholder=" E-mail">
+            </div>
+            
+            <div class="form-group">
+                <input type="tel" id="telefone" name="telefone" 
+                       placeholder=" Telefone">
+            </div>
+            
+            <div class="form-group">
+                <select id="assunto" name="assunto" required>
+                    <option value="">Selecione um assunto</option>
+                    <option value="orcamento">Orçamento</option>
+                    <option value="suporte">Suporte técnico</option>
+                    <option value="duvida">Dúvidas</option>
+                    <option value="parceria">Parcerias</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Mensagem"></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">Enviar mensagem</button>
         </form>
-        <p class="success" id="successMessage">Mensagem enviada com sucesso!</p>
+        
+        <div class="contact-info">
+            <h3>Outras formas de contato</h3>
+            <p><strong>Telefone:</strong> (11) 96458-9266</p>
+            <p><strong>Email:</strong> infogacatecnologia@gmail.com</p>
+            <p><strong>Endereço:</strong> R. Voluntários da Pátria, 654 - Santana, São Paulo - SP, 02010-000</p>
+        </div>
     </div>
-    <!-- <script>
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            document.getElementById('successMessage').style.display = 'block';
-            setTimeout(() => {
-                document.getElementById('successMessage').style.display = 'none';
-                document.getElementById('contactForm').reset();
-            }, 3000);
+
+    <script>
+        // Feedback visual durante o envio
+        document.getElementById("contact-form").addEventListener("submit", function() {
+            const submitBtn = document.querySelector(".submit-btn");
+            submitBtn.innerHTML = "Enviando...";
+            submitBtn.disabled = true;
         });
-    </script> -->
+    </script>
 </body>
 </html>

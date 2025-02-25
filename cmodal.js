@@ -33,6 +33,8 @@ function openModal(id, event) {
         modal.style.display = "flex";
         modal.style.position = "absolute";
         modal.style.top = "50%";
+        modal.style.left = "50%";
+        modal.style.transform = "translate(-50%, -50%"
         modal.style.zIndex = "9000";
         modal.style.width = "100%";
         modal.style.aligncontent = "center";

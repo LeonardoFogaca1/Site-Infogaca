@@ -5,7 +5,7 @@
 
 .sobre-nos h2 {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 40px;
     font-weight: 800;
     margin-bottom: 20px;
     color: #3A3A3A;
@@ -13,7 +13,7 @@
 
 .sobre-nos p {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 18px;
     color: #222222;
     margin-bottom: 40px;
 }

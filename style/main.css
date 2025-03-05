@@ -4,7 +4,7 @@
     text-align: center;
 }
 .header-main h1 {
-    font-size: 38px;
+    font-size: 40px;
     color: #222222;
 }
 .features {
@@ -27,9 +27,18 @@
     margin: 5px;
 }
 
+.feature h2 {
+    font-size: 22px;
+}
+
 .feature p {
     color: #222222;
+    font-size: 18px;
 }
+ #MR {
+    display: block;
+    height: 205px;
+ }
 .feature img {
     margin-top: 25px;
     width: 100%;
@@ -39,7 +48,8 @@
 }
 
 
-@media (min-width: 768px) {
+
+@media (min-width: 1300px) {
     .features {
         flex-wrap: nowrap;
     }
